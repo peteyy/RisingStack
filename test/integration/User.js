@@ -15,7 +15,7 @@ describe('Server', function() {
     it('registers a new user', function(done) {
       hippie(server)
         .json()
-        .post('/register?username=NewGuy&email=p.czibik@gmail.com')
+        .post('/register?username=EmployMe&email=p.czibik@gmail.com')
         .expectStatus(200)
         .end(done);
     });
