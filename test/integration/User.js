@@ -6,7 +6,7 @@ describe('Server', function() {
     it('returns all the users', function(done) {
       hippie(server)
         .json()
-        .get('/users?token=7886a9f9211b52d72670b6f5513c71c7')
+        .get('/users?token=c25b192c718be32695c9d04056f70a1b')
         .expectStatus(200)
         .end(done);
     });
@@ -15,7 +15,7 @@ describe('Server', function() {
     it('registers a new user', function(done) {
       hippie(server)
         .json()
-        .post('/register?username=NewGuy&email=newGuy@gmail.com')
+        .post('/register?username=NewGuy&email=p.czibik@gmail.com')
         .expectStatus(200)
         .end(done);
     });

@@ -4,8 +4,8 @@ var expect = require('chai').expect;
 describe('Mailer', function() {
   it('#sendsEmail', function(done) {
     var user = {
-      username: 'Peter',
-      email: 'p.czibik@gmail.com',
+      username: 'NiceGuy',
+      email: 'hireme@guamil.com',
       token: 'TOKEN',
     };
     mailer.sendMail(user, function(err) {
