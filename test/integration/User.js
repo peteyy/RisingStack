@@ -6,7 +6,7 @@ describe('Server', function() {
     it('returns all the users', function(done) {
       hippie(server)
         .json()
-        .get('/users?token=a6452a908d6e494b8dc7ea96e3d47253')
+        .get('/users?token=7886a9f9211b52d72670b6f5513c71c7')
         .expectStatus(200)
         .end(done);
     });
