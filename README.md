@@ -6,4 +6,4 @@
   - mailer configuration
   - server PORT and address
 
-Followed instructions from RisingStack style guide, and JSHint, I hope You'll like it!
+I followed the instructions in the RisingStack style guide, and JSHint, I hope You'll like it!
