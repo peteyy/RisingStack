@@ -1,7 +1,10 @@
 # RisingStack
 ## Setting up
 - npm install
-- Configuration files:
-  - Database connection string
-  - Mailer configuration
-  - Server PORT and address
+- configuration files:
+  - database connection string
+  - mailer configuration
+  - server PORT and address
+
+Followed instructions from RisingStack style guide, and JSHint
+Hope You'll like it
