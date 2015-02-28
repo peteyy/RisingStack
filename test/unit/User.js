@@ -73,7 +73,7 @@ describe('User', function() {
     var user = {
       username: 'whatever',
       token: 'TOKEN',
-      email: 'email',
+      email: 'email'
     };
 
     sinon.stub(UserModel, 'getUserByToken').yields(null, user);
@@ -88,3 +88,4 @@ describe('User', function() {
     });
   });
 });
+
