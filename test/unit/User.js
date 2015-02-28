@@ -43,20 +43,25 @@ describe('User', function() {
 
   it('#createsUser', function (done) {
     // SetUp
+    var user = {
+      username: 'Peter',
+      email: 'email2'
+    };
     var userToAdd = {
       username: 'Peter',
-      email: 'email'
+      email: 'email',
+      key: 'KEY'
     };
 
     sinon.stub(UserModel, 'createUser').yields(null, userToAdd);
-    sinon.stub(hasher, 'generateKey').yields('key');
 
-    User.addUser(userToAdd, function (err, addedUser) {
+    User.addUser(user, function (err, addedUser) {
 
       // Assertions
       expect(err).to.be.null;
       expect(addedUser.username).to.eql('Peter');
       expect(addedUser.email).to.eql('email');
+      expect(addedUser.key).to.eql('KEY');
       done();
     });
   });
