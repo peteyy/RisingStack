@@ -1,4 +1,4 @@
-var hippie = require('hippie');
+/* var hippie = require('hippie');
 var server = require('./../../lib/Server');
 
 describe('Server', function() {
@@ -21,3 +21,4 @@ describe('Server', function() {
     });
   });
 });
+*/
